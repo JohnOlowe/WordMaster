@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+
+    <RelativeLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:paddingBottom="40dp"
+         android:layout_margin="20dp">
+
+        <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="10dp"
+             android:id="@+id/word_input" />
+
+        <com.google.android.flexbox.FlexboxLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@+id/word_input"
+             android:layout_centerHorizontal="true"
+             android:padding="5dp"
+             android:id="@+id/char_num"
+             app:justifyContent="flex_start"
+             app:alignItems="stretch"
+             app:flexWrap="wrap" />
+
+        <com.google.android.flexbox.FlexboxLayout
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@+id/char_num"
+             android:layout_centerHorizontal="true"
+             android:padding="5dp"
+             app:justifyContent="flex_start"
+             app:alignItems="stretch"
+             app:flexWrap="wrap"
+             android:id="@+id/word_results"/>
+             
+         <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/word_results"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="@string/more"
+            android:visibility="gone"
+            android:id="@+id/more_results"/>
+            
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/word_results"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/less"
+            android:visibility="gone"
+            android:id="@+id/less_results"/>
+            
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Word Master</string>
+    <string name="character_limit">The distinct character limit of this unscrambler is 10 characters</string>
+    <string name="unknown_error">An error occurred, please clear app data amd try again</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+</resources>
